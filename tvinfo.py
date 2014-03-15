@@ -5,7 +5,7 @@ import feedparser
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--detail", help="print detailed description of movie",  type=int)
+parser.add_argument("-d", "--detail", help="print detailed description of movie",  type=int)
 args = parser.parse_args()
 
 urls = [ 'http://www.tvspielfilm.de/tv-programm/rss/heute2015.xml',
